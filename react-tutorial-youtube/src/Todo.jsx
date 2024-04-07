@@ -9,6 +9,7 @@ const Todo = ({todo, toggleTodo}) => {
         <label>
             <input type="checkbox" checked={todo.completed} onChange={handleTodoClick} readOnly/>
         </label>
+        {todo.id}
         {todo.name}
     </div>
   )
